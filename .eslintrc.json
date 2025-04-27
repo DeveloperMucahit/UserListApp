@@ -1,0 +1,169 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "import"
+  ],
+  "rules": {
+    "camelcase": "off",
+    "eol-last": "error",
+    "guard-for-in": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "index",
+          "sibling",
+          "parent",
+          "internal",
+          "external",
+          "builtin",
+          "object",
+          "type"
+        ]
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "info"
+        ]
+      }
+    ],
+    "no-unused-expressions": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [
+      "error",
+      {
+        "ignoreTypeValueShadow": true,
+        "ignoreFunctionTypeParameterNameValueShadow": true
+      }
+    ],
+    "no-undef": "off",
+    "arrow-body-style": "off",
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "class-methods-use-this": "off",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "react/require-default-props": "off",
+    "default-case": "off",
+    "func-names": "off",
+    "react/jsx-indent": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "lines-between-class-members": "off",
+    "max-classes-per-file": [
+      "error",
+      1
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 180
+      }
+    ],
+    "consistent-return": "warn",
+    "no-await-in-loop": "error",
+    "no-case-declarations": "error",
+    "no-confusing-arrow": "off",
+    "no-continue": "off",
+    "no-lonely-if": "error",
+    "no-mixed-operators": "off",
+    "no-multiple-empty-lines": "error",
+    "no-param-reassign": "error",
+    "no-plusplus": "off",
+    "no-prototype-builtins": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ForInStatement",
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+      },
+      {
+        "selector": "WithStatement",
+        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+      }
+    ],
+    "no-return-await": "error",
+    "no-underscore-dangle": "error",
+    "no-use-before-define": "error",
+    "object-curly-newline": "off",
+    "semi": "error",
+    "space-before-function-paren": "off",
+    "symbol-description": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/jsx-fragments": [
+      "error",
+      "element"
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unstable-nested-components": [
+      "error",
+      {
+        "allowAsProps": true
+      }
+    ],
+    "react/prop-types": "off",
+    "no-var": "off"
+  }
+}

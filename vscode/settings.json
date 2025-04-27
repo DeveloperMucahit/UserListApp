@@ -1,0 +1,54 @@
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports.ts": "never",
+    "source.fixAll.eslint": "never",
+    "source.organizeImports": "never",
+    "source.sortImports": "never",
+    "source.removeUnused.ts": "never",
+    "source.removeUnusedImports": "never"
+  },
+  "files.eol": "\n",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#05ef3c",
+    "tree.inactiveIndentGuidesStroke": "#efef05"
+  },
+  "files.exclude": {
+    "**/ios": false,
+    "**/android": false,
+    "**/node_modules": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/Gemfile": true,
+    "**/Gemfile.lock": true,
+    ".bundle": true,
+    ".yarn": true,
+    "**/.eslintrc.**": true,
+    "**/tsconfig.json": true,
+    "react-native.config.js": true,
+    "**/babel.config.js": true,
+    "**/metro.config.js": true,
+    "**/.watchmanconfig": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/app.json": true,
+    "index.d.ts": true,
+    "index.js": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/os/**": true,
+    "**/android/**": true,
+    "**/dist/**": true
+  }
+}
